@@ -49,7 +49,16 @@ void q_short(int low, int high)
 	i = low + 1; //step3
 	j = high;   //step4
 
+	while (i <= j) //step10
+	{
+		//search for an element greater than pivot
+		while ((arr[i] <= pivot) && (i <= high)) //step5
+		{
+			i++; //step6
+			cmp_count++;
+		}
 
+	}
 
 }
 
