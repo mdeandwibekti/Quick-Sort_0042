@@ -94,6 +94,8 @@ void display() {
 	{
 		cout << arr[i] << " ";
 	}
+
+	cout << "\n\nNumber of comparasios: " << cmp_count << endl;
 }
 
 
