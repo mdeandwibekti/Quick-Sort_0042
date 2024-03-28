@@ -18,6 +18,7 @@ void input() {
 		else
 			cout << "\nmaksimum panjang array adalah 20" << endl;
 	}
+
 	cout << "\m---------------" << endl;
 	cout << "\nEnter array element" << endl;
 	cout << "\n---------------" << endl;
@@ -34,6 +35,8 @@ void swap(int x, int y) {
 	arr[x] = arr[y];
 	arr[y] = temp;
 	mov_count++;
+
+
 
 }
 
@@ -55,6 +58,13 @@ void q_short(int low, int high)
 		while ((arr[i] <= pivot) && (i <= high)) //step5
 		{
 			i++; //step6
+			cmp_count++;
+		}
+		cmp_count++;
+		// search for an element less than or equel to pivot
+		while ((arr[j] > pivot) && (j >= low)) //step7
+		{
+			j--; //step8
 			cmp_count++;
 		}
 
