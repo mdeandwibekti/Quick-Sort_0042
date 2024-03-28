@@ -74,13 +74,21 @@ void q_short(int low, int high)
 			swap(i, j);
 		}
 	}
+	if (low < j) { // step 11
+		//swap the pivot element with the element at index j
+		swap(low, j);
+	}
+	//recursive call to sort the left sub array
+	q_short(low, j - 1); //step12
 
+	//recursive call to sort the rigt sub array
+	q_short(j + 1, high);
 }
 
-if (low < j) { // step 11
-	//swap the pivot element with the element at index j
-	swap(low, j);
+void display() {
+	cout << "\n--------------" << endl;
+	cout << "sorted array"
 }
 
-//recursive call to sort the left sub array
-q_short(low, j - 1); //step12
+
+
