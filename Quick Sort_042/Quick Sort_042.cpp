@@ -83,3 +83,4 @@ if (low < j) { // step 11
 }
 
 //recursive call to sort the left sub array
+q_short(low, j - 1); //step12
